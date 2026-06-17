@@ -1,0 +1,25 @@
+# --- Python Environment ---
+.venv/
+venv/
+ENV/
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Heavy Deep Learning Model Files (Crucial for GitHub Limits) ---
+*.caffemodel
+*.prototxt
+*.npy
+
+# --- PyCharm & IDE Internal Configuration ---
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- Local Testing Inputs/Outputs ---
+*output.jpg
+output.png
