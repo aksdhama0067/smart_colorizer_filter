@@ -38,6 +38,12 @@ Tired of processing images one by one? Instead of pointing to a single file, you
  pyproject.toml______(Project dependency configurations)
  
  README.md______(Documentation and usage guide)
+ ---
+ ## 📜 Acknowledgments & Credits
+
+* **Core Algorithm:** Built upon the research paper *Colorful Image Colorization* by [Richard Zhang, Phillip Isola, and Alexei A. Efros](https://arxiv.org/abs/1603.08511).
+* **Original Implementation:** Thanks to the original creators for maintaining the open-source [richzhang/colorization](https://github.com/richzhang/colorization) Caffe model assets.
+* **Libraries Used:** Powered by [OpenCV](https://opencv.org/) and [NumPy](https://numpy.org/).
 
 ---
 ## 🏗️ Execution Architecture & Workflow
