@@ -64,13 +64,16 @@ def process_image(img_path, net, pts, args):
         colorized = img
 
     # --- THE NEW SIDE-BY-SIDE STITCHING LOGIC ---
+    
     if args.compare:
         # np.hstack joins the black & white image and the colorized image side-by-side
+        
         final_output = np.hstack([gray_version, colorized])
     else:
         final_output = colorized
 
     # Output naming setup
+    
     if args.output and not os.path.isdir(args.input):
         out_path = args.output
     else:
@@ -92,7 +95,8 @@ def main():
 
     net, pts = init_colorizer()
 
-    # --- THE NEW BATCH PROCESSING LOOP ---
+    # New Batch Processing LOOp
+    
     if os.path.isdir(args.input):
         print(f"Scanning folder: {args.input}")
         valid_exts = (".jpg", ".jpeg", ".png")
