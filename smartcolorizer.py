@@ -6,6 +6,7 @@ import numpy as np
 
 def init_colorizer():
     # Dynamic absolute path routing to prevent CWD errors
+    
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
     proto_path = os.path.join(base_dir, "colorization_deploy_v2.prototxt")
@@ -16,7 +17,8 @@ def init_colorizer():
         print("[Error] Missing required deep learning model files.")
         return None, None
 
-    # Load the Caffe model
+    # Load the Caffe model(v2)
+    
     net = cv2.dnn.readNetFromCaffe(proto_path, model_path)
     pts = np.load(hull_path, allow_pickle=True)
 
