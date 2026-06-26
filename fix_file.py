@@ -7,7 +7,8 @@ import os
 base_dir = os.path.dirname(os.path.abspath(__file__))
 target_path = os.path.join(base_dir, "pts_in_hull.npy")
 
-# Direct URL to the raw binary 
+# Direct URL to the raw binary / creator
+
 url = "https://github.com/richzhang/colorization/raw/caffe/resources/pts_in_hull.npy"
 
 print("Downloading fresh, uncorrupted file...")
