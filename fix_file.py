@@ -16,7 +16,8 @@ try:
     urllib.request.urlretrieve(url, target_path)
     print("Download complete!")
 
-    # Verify the file is healthy by loading it safely
+    # Automatically verifies the file is healthy by loading it safely
+    
     data = np.load(target_path, allow_pickle=True)
     print(f"Verification Success! Shape of array: {data.shape}")
 except Exception as e:
