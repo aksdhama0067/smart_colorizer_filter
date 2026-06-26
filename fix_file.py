@@ -21,4 +21,4 @@ try:
     data = np.load(target_path, allow_pickle=True)
     print(f"Verification Success! Shape of array: {data.shape}")
 except Exception as e:
-    print(f"Error fixing file: {e}")
+    print(f"Error fixing the given file: {e}")
