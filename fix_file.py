@@ -2,7 +2,8 @@ import urllib.request
 import numpy as np
 import os
 
-# Get current folder
+# Get the path of current folder
+
 base_dir = os.path.dirname(os.path.abspath(__file__))
 target_path = os.path.join(base_dir, "pts_in_hull.npy")
 
